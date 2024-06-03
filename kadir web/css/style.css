@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&display=swap');
+*{
+    transition: all 0.5s ease-in-out;
+    font-family: "Reddit Mono", monospace;
+}
+html{
+    overflow-y: scroll;
+}
+body{
+    background:url('https://i.pinimg.com/originals/7f/47/a5/7f47a55e8565a61e9b9f0e9df8f9c03c.jpg')no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+    /* background-color: #313030; */
+    color:white !important;
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: black;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: gainsboro;
+    border-radius: 10px;
+  }
+/* Navbar Kısımnın Başlangıcı */
+
+.navbar{
+    height: 60px;
+    width: 850px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 2px solid black;
+    background-color: rgba(64, 90, 150, 0.351);
+    margin: 0 auto;
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.351);
+}
+.navbar p{
+    display: inline-block;
+    margin-left:5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor:pointer;
+	
+}
+
+.navbar p:hover::after{
+    content: '.com';
+    color:rgb(96,136, 168);
+}
+
+.navbar ul{
+    float: right;
+    list-style: none;
+    margin-right: 15px;
+	color:black;
+}
+.navbar ul li {
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.navbar a{
+  text-decoration: none;
+  color:white;
+}
+.navbar ul li:hover{
+    border-bottom: 2px solid black;
+}
+
+ul {
+    list-style: none;
+  }
+
+/* Navbar Kısımnın Bitişi   */
+
+  .container{
+    border-right: 3px solid black !important;
+    border-bottom: 3px solid black !important;
+    border: 2px solid black;
+    box-shadow: 2px 2px 0px 0px rgba(255, 255, 255, 0.351);
+    width: 850px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    padding: 10px 5px 10px 5px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%);
+    background-color: rgba(24, 43, 87, 0.629);;
+  }
+#photo{
+    border: 2px solid white;
+    display: inline-block;
+    height: 164px;
+    width: 164px;
+  }
+  .container p{
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    margin-left: 15px;
+  }
+  #cerceve{
+    display: flex;
+    position: absolute;
+    left: -13px;
+    top: -10px;
+    height: 205px;
+  }
+  .content{
+    margin-top: 10px;
+    margin-left: 15px;
+    height: auto;
+  }
+  .title{
+    margin-bottom: 10px;
+  }
+  .content span{
+    color: rgb(96,136, 168);
+  }
+.content .date,
+.content .name,
+.content .company{
+  margin-top: 15px;
+  display: inline-block;
+  width: auto;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #515151;
+}
+
+.content .date{
+  color:rgb(96,136, 168);
+}
+.content-table .date{
+  color:rgb(96,136, 168);;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left:5px;
+}
+#basangicyazisi{
+  margin-bottom:5px;
+}
+.container-header{
+  padding-bottom: 15px;
+  border-bottom:3px solid #fff;
+}
+
+.content{
+  padding-bottom: 20px;
+  border-bottom:3px solid #fff;
+}
+#baslangicyazisi:nth-child(3){
+  color:rgb(96,136, 168);
+}
+.bilgilendirme{
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.resim:nth-child(3){
+  height: 400px;
+  display: block;
+  border: 1px solid rgb(96,136, 168);
+}
+.resim:nth-child(5){
+  height: 430px;
+  display: block;
+  border: 1px solid #4f3131;
+}
+table, th, td {
+
+  border: 1px solid rgb(255, 255, 255);
+
+  border-collapse: collapse;
+
+}
+
+th, td {
+
+  padding: 5px;
+
+}
+tr{
+  background-color: #5151516e;
+}
+
+.posta:hover::after{
+  content: 'gmail.com';
+  color: #0b0;
+}
+.iletisim-ilk{
+  display: inline-block;
+    width: 400px;
+}
+.iletisim-iki{
+  display: inline-block;
+  width: 400px;
+}
+.iletisim-ilk div{
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  margin-top: 15px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
+.iletisim-iki div{
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  margin-top: 15px;
+  padding-left: 8px;
+  padding-bottom: 5px;
+}
+
+/* Sosyal Medya */
+
+.card {
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 2em 1em;
+  width: 260px;
+  background: #fff;
+  border-radius: 12px;
+  animation: shadow 1.8s infinite ease-in-out;
+  transition: box-shadow 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.card .heading {
+  color: royalblue;
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.card .heading span {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.card .icons {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.25),
+  -2px -2px 5px rgba(9, 148, 255, 0.25),
+  inset -2px -2px 55px rgba(9, 148, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+}
+
+.card .icons-container {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.card .icons svg {
+  fill: royalblue;
+  height: 24px;
+  width: 24px;
+}
+
+.card .code {
+  width: fit-content;
+  margin: 1.5em auto;
+}
+
+.card .code svg {
+  fill: royalblue;
+  width: 180px;
+  aspect-ratio: 16/9;
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: 5px 5px 20px rgba(9, 148, 255, 0.15),
+  -5px -5px 10px rgba(9, 148, 255, 0.1),
+  inset -5px -5px 5px rgba(9, 148, 255, 0.5);
+  }
+
+  50% {
+    box-shadow: 25px 25px 50px rgba(9, 148, 255, 0.25),
+  -10px -10px 30px rgba(9, 148, 255, 0.1),
+  inset -5px -5px 15px rgba(9, 148, 255, 0.5);
+  }
+
+  100% {
+    box-shadow: 5px 5px 20px rgba(9, 148, 255, 0.15),
+  -5px -5px 10px rgba(9, 148, 255, 0.1),
+  inset -5px -5px 5px rgba(9, 148, 255, 0.5);
+  }
+}
+.icons:hover{
+  transform: translate(0,-10px);
+}
+
+
+/* Mona lisa loader */
+
+.loader {
+  width: 12em;
+  height: 12em;
+  display: flex;
+  margin: 0 auto;
+}
+
+.loader path {
+  stroke: #000;
+  stroke-width: 0.6px;
+  animation: dashArray 4s ease-in-out infinite,
+    dashOffset 4s linear infinite;
+}
+
+@keyframes dashArray {
+  0% {
+    stroke-dasharray: 0 1 359 0;
+  }
+
+  50% {
+    stroke-dasharray: 0 359 1 0;
+  }
+
+  100% {
+    stroke-dasharray: 359 1 0 0;
+  }
+}
+
+@keyframes dashOffset {
+  0% {
+    stroke-dashoffset: 365;
+  }
+
+  100% {
+    stroke-dashoffset: 5;
+  }
+}
